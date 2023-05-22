@@ -1,0 +1,57 @@
+.search {
+    background: transparent ;
+    flex: 1;
+    max-width: 50vw;
+    height: 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.search__input {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.search__input > input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    font-size: large;
+    text-align: center;
+    background: transparent;
+    color: #a6b9e9;
+}
+.search__input > input::placeholder {
+    color: #18264b;
+    letter-spacing: 10px;
+}
+
+
+.search__input > .MuiSvgIcon-root {
+    font-size: 40px;
+}
+
+.search__input > input::placeholder {
+    text-align: center; 
+}
+
+.search__input > input:focus {
+    outline: none;
+}
+ 
+@media (max-width: 480px) {
+    .search__input > .MuiButtonBase-root {
+      display:none ;
+    }
+    .search {
+        max-width: unset;
+    }
+}
+@media (max-width: 768px) {
+    .search {
+        max-width: unset;
+    }
+}

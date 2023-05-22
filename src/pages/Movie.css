@@ -1,0 +1,185 @@
+.fullMovie {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    position: relative;
+    padding: 0px 16px;
+  }
+  
+  .fullMovie__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32px;
+  }
+  
+  .fullMovie__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+    width: fit-content;
+  }
+  
+  .fullMovie__poster > img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 2/3;
+  }
+  
+  .fullMovie__ratings {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .fullMovie__rating {
+    color: #cad5f2;
+  }
+  
+  .fullMovie__ratingMetacritic {
+    width: 26px;
+    height: 26px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+  }
+  
+  .fullMovie__ratingRottenTomato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullMovie__ratingRottenTomato > img {
+    width: 26px;
+    padding-right: 6px;
+  }
+  
+  .fullMovie__title {
+    color: var(--text-color);
+    font-size: 36px;
+  }
+  .fullMovie__year {
+    color: #5c6a8d;
+  }
+  
+  .fullMovie__plot {
+    color: #cad5f2;
+    padding-top: 32px;
+    font-size: 24px;
+    padding-right: 8px;
+  }
+  
+  .fullMovie__actors {
+    color: #cad5f2;
+  }
+  
+  .fullMovie__divider {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    height: 1px;
+    background-color: #053c5d7f;
+  }
+  
+  .fullMovie__dividerBottom {
+    display: flex;
+    width: 97%;
+    height: 1px;
+    background-color: #053c5d7f;
+    margin-bottom: 8px;
+  }
+  
+  .fullMovie__bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+  }
+  
+  .fullMovie__back {
+    position: absolute;
+    left: -100px;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  .fullMovie__back > .MuiSvgIcon-root {
+    transition: all 300ms ease;
+    font-size: 40px;
+  }
+  
+  .fullMovie__back:hover > .MuiSvgIcon-root {
+    transform: scale(1.2);
+  }
+  
+  .fullMovie__loading {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+  
+  @media (max-width: 1220px) {
+    .fullMovie__dividerBottom,
+    .fullMovie__divider {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fullMovie__plot {
+      font-size: 20px;
+    }
+    .fullMovie__bottom{
+      bottom: -10%
+    }
+  }
+  
+  @media (max-width: 648px) {
+    .fullMovie {
+       display: flex; 
+       flex-direction: column;
+       padding: unset;
+    }
+  
+    .fullMovie__left {
+      margin: unset;
+    }
+  
+    .fullMovie__right {
+      margin-bottom: 20vh;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 16px;
+    }
+    .fullMovie__title,
+    .fullMovie__year,
+    .fullMovie__plot,
+    .fullMovie__actors {
+      text-align: center;
+    }
+    .fullMovie__title {
+      padding: 0 8px;
+    }
+    .fullMovie__plot {
+      padding: 16px;
+      padding-bottom: 0;
+    }
+    .fullMovie__divider,
+    .fullMovie__dividerBottom {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 32px;
+    }
+    .fullMovie__actors {
+      margin-top: 8px;
+    }
+  }

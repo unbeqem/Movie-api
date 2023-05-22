@@ -1,0 +1,79 @@
+.results {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .results__searchBar {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 50vw;
+  }
+  
+  .results__films {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .results__film {
+    display: flex;
+    justify-content: center;
+    flex: calc(10 / 3);
+    margin: 16px;
+  }
+  
+  .results__films > .results__film {
+    min-width: 30%;
+  }
+  
+  .results__sort {
+    position: absolute;
+    right: 24px;
+    top: 100px;
+  }
+  .results__sort > select {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    padding: 8px;
+    color: #475780;
+  }
+  
+  .results__sort > select:focus-visible {
+    border-color: var(--text-color);
+  }
+  
+  .results__loading {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+  /* MOBILE PHONES */
+  @media (max-width: 576px) {
+    .results__sort > select {
+      padding: 4px;
+    }
+    .results__sort {
+      top: 110px;
+    }
+    .results__searchBar {
+      width: 70vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .results__searchBar {
+      width: 80vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .results__searchBar {
+      width: 70vw;
+    }
+  }

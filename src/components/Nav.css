@@ -1,0 +1,31 @@
+.nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+  }
+  
+  .nav__logo > img {
+    width: 120px;
+  }
+  
+  .nav_pages {
+    display: flex;
+    color: var(--text-color) !important;
+    gap: 16px;
+  }
+  
+  .nav_pages > a >.MuiButtonBase-root {
+    border-radius: 40px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .nav__link {
+    font-family: "Segoe UI";
+    font-size: 28px !important;
+    font-weight: 100 !important;
+    text-transform: none !important;
+  }

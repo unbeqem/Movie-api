@@ -1,0 +1,14 @@
+.rotate_animation {
+    animation: rotate 2s linear infinite;
+    width: 120px;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

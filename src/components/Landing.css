@@ -1,0 +1,53 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.landing__text {
+    font-size: 60px;
+    color: var(--text-color);
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.landing__search {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    min-width: 60vw;
+}
+
+.animate__fadeIn {
+    animation-duration: 3s;
+}
+
+.animate__fadeInUpBig {
+    animation-duration: 2s;
+    
+}
+
+/* Hide scrollbar */
+
+.landing {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: hidden; 
+}
+
+.landing::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+@media (max-width: 768px) {
+    .landing__text {
+        font-size: 48px;
+    }
+}
